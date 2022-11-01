@@ -16,7 +16,7 @@ function App() {
   
   useEffect(() => {
     dispatch(fetchAsyncWeather(cityName))
-  }, [dispatch, cityName])
+  }, [cityName])
 
   const TimeDate = data?.location?.localtime?.trim().split(/\s+/);
 
